@@ -1,8 +1,7 @@
 "use client";
-import React, { useState, useRef } from "react";
-import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
+import ProjectCard from "./ProjectCard";
 
 const projectsData = [
   {
@@ -85,11 +84,11 @@ const ProjectsSection = () => {
         Meine Projekte
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="Alles"
           isSelected={tag === "Alles"}
-        />
+        /> */}
         {/* <ProjectTag
           onClick={handleTagChange}
           name="Web"

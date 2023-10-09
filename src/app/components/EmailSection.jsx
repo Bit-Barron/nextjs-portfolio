@@ -1,8 +1,7 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import Link from "next/link";
-import Image from "next/image";
 
 const EmailSection = () => {
   return (
@@ -37,7 +36,7 @@ const EmailSection = () => {
               htmlFor="email"
               className="text-white block mb-2 text-sm font-medium"
             >
-              Your email
+              Deine Email{" "}
             </label>
             <input
               type="email"
@@ -52,7 +51,7 @@ const EmailSection = () => {
               htmlFor="subject"
               className="text-white block text-sm mb-2 font-medium"
             >
-              Subject
+              Thema
             </label>
             <input
               type="text"
@@ -67,7 +66,7 @@ const EmailSection = () => {
               htmlFor="message"
               className="text-white block text-sm mb-2 font-medium"
             >
-              Message
+              Nachricht
             </label>
             <textarea
               name="message"
@@ -80,7 +79,7 @@ const EmailSection = () => {
             type="submit"
             className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
-            Send Message
+            Sende Nachricht
           </button>
         </form>
       </div>

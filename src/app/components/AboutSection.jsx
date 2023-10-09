@@ -5,36 +5,36 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "Fähigkeiten",
+    id: "Fähigkeiten",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Künstlerin</li>
+        <li>Künstlerin</li>
+        <li>Künstlerin</li>
+        <li>Künstlerin</li>
+        <li>Künstlerin</li>
+        <li>Künstlerin</li>
       </ul>
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Bildung",
+    id: "Bildung",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Künstlerin</li>
+        <li>Künstlerin</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Zertifizierungen",
+    id: "Zertifizierungen",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Künstlerin</li>
+        <li>Künstlerin</li>
       </ul>
     ),
   },
@@ -66,29 +66,29 @@ const AboutSection = () => {
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("Fähigkeiten")}
+              active={tab === "Fähigkeiten"}
             >
               {" "}
-              Skills{" "}
+              Fähigkeiten{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              selectTab={() => handleTabChange("Bildung")}
+              active={tab === "Bildung"}
             >
               {" "}
-              Education{" "}
+              Bildung{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("Zertifizierungen")}
+              active={tab === "Zertifizierungen"}
             >
               {" "}
-              Certifications{" "}
+              Zertifizierungen{" "}
             </TabButton>
           </div>
           <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
+            {TAB_DATA.find((t) => t.id === tab)?.content}
           </div>
         </div>
       </div>
