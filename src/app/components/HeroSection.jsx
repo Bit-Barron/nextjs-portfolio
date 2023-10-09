@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
@@ -17,20 +16,11 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
+              Hallo, I&apos;Ich bin{" "}
             </span>
             <br></br>
             <TypeAnimation
-              sequence={[
-                "Judy",
-                1000,
-                "Web Developer",
-                1000,
-                "Mobile Developer",
-                1000,
-                "UI/UX Designer",
-                1000,
-              ]}
+              sequence={["Jessie", 1000, "Eine Künstlerin", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
@@ -40,7 +30,7 @@ const HeroSection = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             voluptatum.
           </p>
-          <div>
+          {/* <div>
             <Link
               href="/contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
@@ -55,7 +45,7 @@ const HeroSection = () => {
                 Download CV
               </span>
             </Link>
-          </div>
+          </div> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}

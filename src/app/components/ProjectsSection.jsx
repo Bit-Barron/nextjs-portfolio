@@ -82,15 +82,15 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+        Meine Projekte
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
+          name="Alles"
+          isSelected={tag === "Alles"}
         />
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
@@ -99,7 +99,7 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
-        />
+        /> */}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
