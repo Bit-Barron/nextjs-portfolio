@@ -3,9 +3,9 @@ env: hetzner-k3s
 namespace: onkelmo
 values:
   gitSha: "{{ .SHA }}"
-  gitRepository: Bit-Barron/jessie
+  gitRepository: Bit-Barron/nextjs-portfolio
   image:
-    repository: ghcr.io/bit-barron/jessie
+    repository: ghcr.io/bit-barron/nextjs-portfolio
     tag: "{{ .SHA }}"
   containerPort: 3000
   ingress:
