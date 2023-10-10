@@ -1,8 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
-
 const EmailSection = () => {
   return (
     <section
@@ -18,17 +13,9 @@ const EmailSection = () => {
           {" "}
           Ich bin derzeit auf der Suche nach neuen Möglichkeiten, mein
           Posteingang ist immer offen. Egal, ob Sie eine Frage haben oder
-          einfach nur hallo sagen wollen, ich werde mein Bestes tun, um
-          mich bei Ihnen zu melden!
+          einfach nur hallo sagen wollen, ich werde mein Bestes tun, um mich bei
+          Ihnen zu melden!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link href="linkedin.com">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
-        </div>
       </div>
       <div className="z-10">
         <form className="flex flex-col">
