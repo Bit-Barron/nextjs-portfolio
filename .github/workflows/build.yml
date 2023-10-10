@@ -55,7 +55,7 @@ jobs:
         with:
           DEPLOY: "true"
           ENV: "hetzner-k3s"
-          APP: "jessie"
+          APP: "nextjs-portfolio"
         env:
           GIMLET_SERVER: ${{ secrets.GIMLET_SERVER }}
           GIMLET_TOKEN: ${{ secrets.GIMLET_TOKEN }}

@@ -1,4 +1,4 @@
-app: jessie
+app: nextjs-portfolio
 env: hetzner-k3s
 namespace: onkelmo
 values:
