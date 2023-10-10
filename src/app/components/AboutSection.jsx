@@ -58,7 +58,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">Über Mich</h2>
           <p className="text-base lg:text-lg">
             Hallo und Willkommen auf meiner Website! Ich bin Jessie, eine
-            Künstlerin aus _. Ich habe einen Bachelor in Kunst und Design und
+            Künstlerin aus Lünen. Ich habe einen Bachelor in Kunst und Design und
             einen Master in Kunstgeschichte. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Natus provident explicabo nesciunt
             quas, reiciendis aut placeat dolore nulla commodi quis molestias qui
