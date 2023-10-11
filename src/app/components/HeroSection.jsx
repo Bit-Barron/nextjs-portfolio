@@ -26,7 +26,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#ADB7BE]  text-base sm:text-lg mb-6 lg:text-xl">
             Ich bin jessie eine Künstlerin.
           </p>
           {/* <div>
