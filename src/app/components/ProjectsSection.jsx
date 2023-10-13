@@ -100,7 +100,7 @@ const ProjectsSection = () => {
         /> */}
       </div>
 
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-4 gap-8 md:gap-12">
         <Image src="/images/IMG_1428.png" alt="" width={250} height={200} />
         <Image src="/images/IMG_3416.png" alt="" width={250} height={200} />
         <Image src="/images/IMG_3520.png" alt="" width={250} height={200} />
