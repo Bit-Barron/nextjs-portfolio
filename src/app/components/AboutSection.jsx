@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import Image from "next/image";
 import { useState, useTransition } from "react";
 import TabButton from "./TabButton";
@@ -64,7 +65,7 @@ const AboutSection = () => {
             quas, reiciendis aut placeat dolore nulla commodi quis molestias qui
             fugit consectetur! Modi odio nihil ab sint animi.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          {/* <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("Fähigkeiten")}
               active={tab === "Fähigkeiten"}
@@ -89,7 +90,7 @@ const AboutSection = () => {
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab)?.content}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

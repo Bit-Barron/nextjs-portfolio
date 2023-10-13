@@ -1,14 +1,13 @@
 "use client";
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import ProjectCard from "./ProjectCard";
+import Image from "next/image";
 
 const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
     description: "Project 1 description",
-    image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -100,25 +99,34 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         /> */}
       </div>
+
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))}
+        <Image src="/images/IMG_1428.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3416.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3520.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3521.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3522.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3523.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3591.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3656.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3658.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3660.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3665.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3670.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3671.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3679.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3682.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3710.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3712.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3721.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3724.PNG" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3725.PNG" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3716.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3715.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3713.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3675.png" alt="" width={250} height={200} />
+        <Image src="/images/IMG_3678.png" alt="" width={250} height={200} />
+
       </ul>
     </section>
   );
